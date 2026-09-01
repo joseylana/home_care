@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Navbar = () => {
   const navItems = [
     {
@@ -16,8 +14,8 @@ const Navbar = () => {
     },
     {
       name: 'Contact',
-    }
-  ]
+    },
+  ];
 
   return (
     <div className='flex justify-between items-center p-4 bg-white shadow-md'>
@@ -44,10 +42,9 @@ const Navbar = () => {
         <button className='bg-[#006d6f] text-white py-2 px-4 rounded-md hover:bg-[#3dbca8]'>
           Get Started
         </button>
-      </div>  
+      </div>
     </div>
-    
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
