@@ -1,10 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 .logo-font {
   font-family: "Dr Sugiyama", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+.nav-item {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.body-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 
