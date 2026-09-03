@@ -1,11 +1,5 @@
 import heroImage from '../../assets/care_giver.jpg';
 
-const stats = [
-  { label: 'Caregivers', value: '250+' },
-  { label: 'Families served', value: '4.8k' },
-  { label: 'Average rating', value: '4.9/5' },
-];
-
 const HeroSection = () => {
   return (
     <section className='bg-[#f5fbfa]'>
@@ -28,12 +22,12 @@ const HeroSection = () => {
             <button className='body-font rounded-md bg-[#006d6f] px-6 py-3 text-sm text-white transition-colors hover:bg-[#3dbca8]'>
               Book a visit
             </button>
-            <button className='body-font rounded-md border border-[#006d6f] bg-white px-6 py-3 text-sm text-[#006d6f] transition-colors hover:bg-[#ecf7f5]'>
+            <button className='body-font rounded-md border border-[#006d6f] bg-white px-6 py-3 text-sm text-[#006d6f] transition-colors hover:bg-[#006d6f] hover:text-white'>
               Learn more
             </button>
           </div>
 
-          <div className='mt-10 flex flex-wrap gap-8'>
+          {/* <div className='mt-10 flex flex-wrap gap-8'>
             {stats.map((item) => (
               <div key={item.label}>
                 <p className='body-font text-3xl text-[#006d6f]'>{item.value}</p>
@@ -42,7 +36,7 @@ const HeroSection = () => {
                 </p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div className='relative'>
@@ -57,12 +51,12 @@ const HeroSection = () => {
             />
           </div>
 
-          <div className='absolute -bottom-4 left-6 rounded-2xl bg-white p-4 shadow-lg ring-1 ring-[#e6eceb]'>
+          {/* <div className='absolute -bottom-4 left-6 rounded-2xl bg-white p-4 shadow-lg ring-1 ring-[#e6eceb]'>
             <p className='nav-item text-[10px] tracking-[0.18em] text-[#4d5d5d]'>
               24/7 support
             </p>
             <p className='mt-2 text-2xl font-bold text-[#006d6f]'>1-Click help</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
