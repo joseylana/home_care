@@ -1,10 +1,10 @@
 const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '#' },
-    { name: 'Services', href: '#' },
-    { name: 'How it Works', href: '#' },
-    { name: 'About', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'Services', href: '#services' },
+    { name: 'How it Works', href: '#works' },
+    { name: 'About', href: '#about' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -27,12 +27,12 @@ const Navbar = () => {
         </nav>
 
         <div className='flex items-center gap-3'>
-          <button className='body-font rounded-md border border-[#006d6f] bg-white px-4 py-2 text-sm text-[#006d6f] transition-colors hover:bg-[#006d6f] hover:text-white'>
+          <a href='#login' className='body-font rounded-md border border-[#006d6f] bg-white px-4 py-2 text-sm text-[#006d6f] transition-colors hover:bg-[#006d6f] hover:text-white'>
             Login
-          </button>
-          <button className='body-font rounded-md bg-[#006d6f] px-4 py-2 text-sm text-white transition-colors hover:bg-[#3dbca8]'>
+          </a>
+          <a href='#signup' className='body-font rounded-md bg-[#006d6f] px-4 py-2 text-sm text-white transition-colors hover:bg-[#3dbca8]'>
             Get Started
-          </button>
+          </a>
         </div>
       </div>
     </header>

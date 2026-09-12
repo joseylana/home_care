@@ -71,7 +71,7 @@ const Testimonials = () => {
 
         <div className='mt-8 flex flex-col gap-4 rounded-2xl bg-[#006d6f] px-6 py-5 text-left text-white sm:flex-row sm:items-center sm:justify-between sm:px-8'>
           <p className='body-font text-sm leading-6 sm:text-base'>A trusted extra pair of hands for the moments that matter.</p>
-          <a href='#' className='nav-item inline-flex items-center text-[10px] tracking-[0.16em] text-[#bde7df] transition-colors hover:text-white'>
+          <a href='#signup' className='nav-item inline-flex items-center text-[10px] tracking-[0.16em] text-[#bde7df] transition-colors hover:text-white'>
             START A CONVERSATION <span className='ml-2' aria-hidden='true'>-&gt;</span>
           </a>
         </div>

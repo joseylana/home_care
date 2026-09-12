@@ -1,5 +1,7 @@
+import Auth from './auth';
+
 const Login = () => {
-  return <div></div>;
+  return <Auth mode='login' />;
 };
 
 export default Login;

@@ -19,12 +19,12 @@ const HeroSection = () => {
           </p>
 
           <div className='mt-8 flex flex-wrap items-center gap-4'>
-            <button className='body-font rounded-md bg-[#006d6f] px-6 py-3 text-sm text-white transition-colors hover:bg-[#3dbca8]'>
+            <a href='#signup' className='body-font rounded-md bg-[#006d6f] px-6 py-3 text-sm text-white transition-colors hover:bg-[#3dbca8]'>
               Book a visit
-            </button>
-            <button className='body-font rounded-md border border-[#006d6f] bg-white px-6 py-3 text-sm text-[#006d6f] transition-colors hover:bg-[#006d6f] hover:text-white'>
+            </a>
+            <a href='#' className='body-font rounded-md border border-[#006d6f] bg-white px-6 py-3 text-sm text-[#006d6f] transition-colors hover:bg-[#006d6f] hover:text-white'>
               Learn more
-            </button>
+            </a>
           </div>
 
           {/* <div className='mt-10 flex flex-wrap gap-8'>

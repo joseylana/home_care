@@ -1,0 +1,13 @@
+import { FiChevronLeft, FiChevronRight, FiPlus } from 'react-icons/fi';
+import DashboardLayout from '../components/dashboard/DashboardLayout';
+
+const schedule = [
+  ['09:00', 'Mrs. Grace Mensah', 'Chidinma Eze', 'Morning care', 'teal'],
+  ['11:30', 'Mr. Daniel Cole', 'Samuel Adeyemi', 'Wellness check', 'orange'],
+  ['14:00', 'Mrs. Beatrice Okoro', 'Amina Yusuf', 'Medication support', 'lavender'],
+  ['16:30', 'Mrs. Grace Mensah', 'Chidinma Eze', 'Evening check-in', 'teal'],
+];
+
+const Schedule = () => <DashboardLayout active='Schedule' title='Schedule' subtitle='Plan visits, coordinate caregivers, and keep every handoff clear.'><div className='flex flex-wrap items-center justify-between gap-4'><div className='flex items-center gap-3'><button type='button' aria-label='Previous week' className='rounded-lg border border-[#dfeae8] bg-white p-2 text-[#647171]'><FiChevronLeft /></button><p className='font-semibold'>September 7 - 13, 2026</p><button type='button' aria-label='Next week' className='rounded-lg border border-[#dfeae8] bg-white p-2 text-[#647171]'><FiChevronRight /></button></div><button type='button' className='flex items-center gap-2 rounded-lg bg-[#006d6f] px-4 py-3 text-sm font-medium text-white hover:bg-[#3dbca8]'><FiPlus /> New visit</button></div><div className='mt-6 overflow-hidden rounded-xl border border-[#dfeae8] bg-white'><div className='grid grid-cols-7 border-b border-[#dfeae8] text-center text-xs text-[#7a8988]'><div className='p-4 text-left'>TIME</div>{['MON 7', 'TUE 8', 'WED 9', 'THU 10', 'FRI 11', 'SAT 12', 'SUN 13'].map((day, index) => <div key={day} className={`border-l border-[#edf1f0] p-4 ${index === 0 ? 'font-bold text-[#006d6f]' : ''}`}>{day}</div>)}</div><div className='min-w-[760px] divide-y divide-[#edf1f0]'>{schedule.map(([time, client, caregiver, type, color]) => <div key={time} className='grid grid-cols-7'><div className='p-4 text-sm font-semibold text-[#647171]'>{time}</div><div className={`col-span-1 border-l border-[#edf1f0] p-2 ${color === 'teal' ? 'bg-[#f5fbfa]' : color === 'orange' ? 'bg-[#fffaf7]' : 'bg-[#fafaff]'}`}><div className={`rounded-lg border-l-4 p-3 text-left ${color === 'teal' ? 'border-[#3dbca8] bg-[#dff1ee]' : color === 'orange' ? 'border-[#e28e68] bg-[#fff0e7]' : 'border-[#8888bd] bg-[#e8e8f7]'}`}><p className='truncate text-xs font-semibold'>{client}</p><p className='mt-1 truncate text-[11px] text-[#647171]'>{type}</p><p className='mt-2 truncate text-[10px] text-[#7a8988]'>{caregiver}</p></div></div>{[1, 2, 3, 4, 5, 6].map((item) => <div key={item} className='border-l border-[#edf1f0]' />)}</div>)}</div></div></DashboardLayout>;
+
+export default Schedule;
