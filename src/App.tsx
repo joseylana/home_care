@@ -13,13 +13,14 @@ import Services from './pages/Services';
 import HowItWorks from './pages/HowItWorks';
 import About from './pages/About';
 
-type View = 'home' | 'login' | 'signup' | 'dashboard' | 'admin' | 'schedule' | 'family' | 'profile' | 'report' | 'services' | 'works' | 'about';
+type View = 'home' | 'login' | 'signup' | 'dashboard' | 'admin' | 'admin-dashboard' | 'schedule' | 'family' | 'profile' | 'report' | 'services' | 'works' | 'about';
 
 const getView = (): View => {
   const route = window.location.hash;
   if (route === '#login') return 'login';
   if (route === '#signup') return 'signup';
   if (route === '#dashboard') return 'dashboard';
+  if (route === '#admin-dashboard') return 'admin-dashboard';
   if (route === '#admin') return 'admin';
   if (route === '#schedule') return 'schedule';
   if (route === '#family') return 'family';
@@ -46,6 +47,7 @@ const App = () => {
       {view === 'login' && <Login />}
       {view === 'signup' && <SignIn />}
       {view === 'dashboard' && <Dashboard />}
+      {view === 'admin-dashboard' && <AdminDashboard />}
       {view === 'admin' && <AdminDashboard />}
       {view === 'schedule' && <Schedule />}
       {view === 'family' && <FamilyDashboard />}
